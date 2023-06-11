@@ -10,8 +10,12 @@ export function ProjectList() {
         ...wagmiContractConfig,
         functionName: 'getAllVaults',
     })
+    let beneficiaries = []
     console.log(data)
-    const beneficiaries = (Object.values(data as object))
+    if (!isLoading && data) {
+        beneficiaries = (Object.values(data as object))
+    }
+
 
     return (
         beneficiaries ? (
