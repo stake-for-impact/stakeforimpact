@@ -5,10 +5,10 @@ import { ConnectButton } from "./ConnectButton";
 
 export function Navbar() {
 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const { isConnected } = useAccount();
   return (
-    <div className=" w-full max-w-7xl">
+    <div className="w-full max-w-7xl">
       <div className="flex flex-col max-w-screen-xl p-5 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div className="flex flex-row items-center justify-between lg:justify-start">
           <Link
