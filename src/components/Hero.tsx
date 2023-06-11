@@ -6,13 +6,11 @@ export function Hero() {
           <div className="relative inline-flex items-center mx-auto align-middle">
             <div className="text-center">
               <h1 className="max-w-5xl text-2xl font-bold leading-none tracking-tighter text-neutral-600 md:text-5xl lg:text-6xl lg:max-w-7xl">
-                Stake your Ethereum <br className="hidden lg:block" />
-                to support good cause
+                  Stake your ETH <br className="hidden lg:block" />
+                  to support important causes
               </h1>
               <p className="max-w-xl mx-auto mt-8 text-base leading-relaxed text-gray-500">
-                The hell I know, some super smart claim. The hell I know, some
-                super smart claim. The hell I know, some super smart claim. The
-                hell I know, some super smart claim.{" "}
+                  Our platform allows you to stake ETH and automatically donate staking rewards on a reccuring basis in a permissionless and a transparent way. You will recieve Impact ETH token (imETH) representing your contribution. You can withdraw your stake at any time.
               </p>
               <div className="flex justify-center w-full max-w-2xl gap-2 mx-auto mt-6">
                 <div className="mt-3 rounded-lg sm:mt-0">
