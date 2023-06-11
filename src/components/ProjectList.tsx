@@ -1,13 +1,16 @@
 import { useContractRead } from 'wagmi'
 import addProjectABI from "../utils/abi.json"
 import { Link } from "react-router-dom";
+import { wagmiContractConfig } from './sficontract';
 
 export function ProjectList() {
     const { data, isError, isLoading } = useContractRead({
-        address: '0xCbC05354126a9bE8d87e9110e6eCa45fb85C7a78',
-        abi: addProjectABI,
+        // address: '0xCbC05354126a9bE8d87e9110e6eCa45fb85C7a78',
+        // abi: addProjectABI,
+        ...wagmiContractConfig,
         functionName: 'getAllVaults',
     })
+    console.log(data)
     const beneficiaries = (Object.values(data as object))
 
     return (
