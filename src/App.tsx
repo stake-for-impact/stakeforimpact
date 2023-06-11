@@ -17,12 +17,18 @@ import { WatchContractEvents } from './components/WatchContractEvents'
 import { WatchPendingTransactions } from './components/WatchPendingTransactions'
 import { WriteContract } from './components/WriteContract'
 import { WriteContractPrepared } from './components/WriteContractPrepared'
+import { Navbar } from './components/Navbar'
+import { Hero } from './components/Hero'
+import { ProjectList } from './components/ProjectList'
 
 export function App() {
   const { isConnected } = useAccount()
   return (
-    <>
-      <h1>wagmi + ConnectKit + Vite</h1>
+
+    <div className='flex flex-col justify-center items-center'>
+      <Navbar />
+      <Hero />
+      <ProjectList />
       <ConnectKitButton />
       {isConnected && (
         <>
@@ -91,6 +97,6 @@ export function App() {
           <WriteContractPrepared />
         </>
       )}
-    </>
+    </div>
   )
 }
