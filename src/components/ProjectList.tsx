@@ -21,15 +21,15 @@ export function ProjectList() {
     <section className="pb-12">
       <div className="relative">
         <div className="relative flex justify-start">
-          <span className="pr-3 text-lg font-medium text-neutral-600 pb-2">
+          <span className="pr-3 ml-4 text-lg font-medium text-neutral-600 pb-2">
             {" "}
             All Projects{" "}
           </span>
         </div>
       </div>
-      <div className="space-y-8 ">
+      <div className="space-y-8 px-4 ">
         {beneficiaries.map((b, i) => (
-          <div key={i} className="py-8 sm:flex group bg-white rounded-3xl">
+          <div key={i} className="py-8 sm:flex group bg-white rounded-3xl p-4">
             <div className="mb-4 sm:mb-0 sm:mx-4">
               <div
                 className={`w-8 h-8 lg:w-32 lg:h-32 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 rounded-3xl`}
