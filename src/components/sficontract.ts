@@ -1,161 +1,160 @@
 export const wagmiContractConfig = {
-  address: '0xCbC05354126a9bE8d87e9110e6eCa45fb85C7a78',
+  address: "0xCbC05354126a9bE8d87e9110e6eCa45fb85C7a78",
   abi: [
     {
-      "inputs": [
+      inputs: [
         {
-          "internalType": "address",
-          "name": "_stETH",
-          "type": "address"
-        }
+          internalType: "address",
+          name: "_stETH",
+          type: "address",
+        },
       ],
-      "stateMutability": "nonpayable",
-      "type": "constructor"
+      stateMutability: "nonpayable",
+      type: "constructor",
     },
     {
-      "inputs": [
+      inputs: [
         {
-          "internalType": "address",
-          "name": "_beneficiary",
-          "type": "address"
+          internalType: "address",
+          name: "_beneficiary",
+          type: "address",
         },
         {
-          "internalType": "string",
-          "name": "name",
-          "type": "string"
+          internalType: "string",
+          name: "name",
+          type: "string",
         },
         {
-          "internalType": "string",
-          "name": "description",
-          "type": "string"
-        }
+          internalType: "string",
+          name: "description",
+          type: "string",
+        },
       ],
-      "name": "createVault",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
+      name: "createVault",
+      outputs: [],
+      stateMutability: "nonpayable",
+      type: "function",
     },
     {
-      "inputs": [],
-      "name": "getAllVaults",
-      "outputs": [
+      inputs: [],
+      name: "getAllVaults",
+      outputs: [
         {
-          "components": [
+          components: [
             {
-              "internalType": "string",
-              "name": "name",
-              "type": "string"
+              internalType: "string",
+              name: "name",
+              type: "string",
             },
             {
-              "internalType": "string",
-              "name": "description",
-              "type": "string"
+              internalType: "string",
+              name: "description",
+              type: "string",
             },
             {
-              "internalType": "address",
-              "name": "beneficiary",
-              "type": "address"
+              internalType: "address",
+              name: "beneficiary",
+              type: "address",
             },
             {
-              "internalType": "address",
-              "name": "vaultAddress",
-              "type": "address"
-            }
+              internalType: "address",
+              name: "vaultAddress",
+              type: "address",
+            },
           ],
-          "internalType": "struct VaultInfo[]",
-          "name": "",
-          "type": "tuple[]"
-        }
+          internalType: "struct VaultInfo[]",
+          name: "",
+          type: "tuple[]",
+        },
       ],
-      "stateMutability": "view",
-      "type": "function"
+      stateMutability: "view",
+      type: "function",
     },
     {
-      "inputs": [],
-      "name": "imEth",
-      "outputs": [
+      inputs: [],
+      name: "imEth",
+      outputs: [
         {
-          "internalType": "contract ImpactETHtoken",
-          "name": "",
-          "type": "address"
-        }
+          internalType: "contract ImpactETHtoken",
+          name: "",
+          type: "address",
+        },
       ],
-      "stateMutability": "view",
-      "type": "function"
+      stateMutability: "view",
+      type: "function",
     },
     {
-      "inputs": [],
-      "name": "imEthAddress",
-      "outputs": [
+      inputs: [],
+      name: "imEthAddress",
+      outputs: [
         {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        }
+          internalType: "address",
+          name: "",
+          type: "address",
+        },
       ],
-      "stateMutability": "view",
-      "type": "function"
+      stateMutability: "view",
+      type: "function",
     },
     {
-      "inputs": [],
-      "name": "stETH",
-      "outputs": [
+      inputs: [],
+      name: "stETH",
+      outputs: [
         {
-          "internalType": "contract IstETH",
-          "name": "",
-          "type": "address"
-        }
+          internalType: "contract IstETH",
+          name: "",
+          type: "address",
+        },
       ],
-      "stateMutability": "view",
-      "type": "function"
+      stateMutability: "view",
+      type: "function",
     },
     {
-      "inputs": [
+      inputs: [
         {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
+          internalType: "uint256",
+          name: "",
+          type: "uint256",
+        },
       ],
-      "name": "vaults",
-      "outputs": [
+      name: "vaults",
+      outputs: [
         {
-          "internalType": "string",
-          "name": "name",
-          "type": "string"
+          internalType: "string",
+          name: "name",
+          type: "string",
         },
         {
-          "internalType": "string",
-          "name": "description",
-          "type": "string"
+          internalType: "string",
+          name: "description",
+          type: "string",
         },
         {
-          "internalType": "address",
-          "name": "beneficiary",
-          "type": "address"
+          internalType: "address",
+          name: "beneficiary",
+          type: "address",
         },
         {
-          "internalType": "address",
-          "name": "vaultAddress",
-          "type": "address"
-        }
+          internalType: "address",
+          name: "vaultAddress",
+          type: "address",
+        },
       ],
-      "stateMutability": "view",
-      "type": "function"
+      stateMutability: "view",
+      type: "function",
     },
     {
-      "inputs": [],
-      "name": "vaultsNumber",
-      "outputs": [
+      inputs: [],
+      name: "vaultsNumber",
+      outputs: [
         {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
+          internalType: "uint256",
+          name: "",
+          type: "uint256",
+        },
       ],
-      "stateMutability": "view",
-      "type": "function"
-    }
+      stateMutability: "view",
+      type: "function",
+    },
   ],
-} as const
-
+} as const;
