@@ -4,6 +4,7 @@ import { useAccount } from "wagmi";
 import { ConnectButton } from "./ConnectButton";
 
 export function Navbar() {
+
   const [open, setOpen] = useState(false);
   const { isConnected } = useAccount();
   return (
@@ -45,12 +46,6 @@ export function Navbar() {
           >
             About
           </a>
-          <a
-            className="px-4 py-2 mt-2 text-sm text-gray-500 md:mt-0 hover:text-blue-600 focus:outline-none focus:shadow-outline"
-            href="/contact"
-          >
-            Contact
-          </a>
 
           <div className="inline-flex items-center gap-2 list-none lg:ml-auto">
             {isConnected ? (
@@ -58,7 +53,7 @@ export function Navbar() {
                 className="items-center block px-10 py-2.5 text-base font-medium text-center text-blue-600 transition duration-500 ease-in-out transform border-2 border-white shadow-md rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
                 to={`create`}
               >
-                Add Beneficiary
+                  Create campaig
               </Link>
             ) : (
               <ConnectButton />

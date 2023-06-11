@@ -9,6 +9,7 @@ import {
 import addProjectABI from "../utils/abi.json";
 
 export default function AddCause() {
+
   const { data, isLoading, isSuccess, write } = useContractWrite({
     address: "0xCbC05354126a9bE8d87e9110e6eCa45fb85C7a78",
     abi: addProjectABI,
@@ -26,7 +27,6 @@ export default function AddCause() {
               const beneficiary = formData.get("address") as string;
               const projectname = formData.get("projectname") as string;
               const description = formData.get("description") as string;
-
               write({
                 args: [beneficiary, projectname, description],
               });
@@ -37,7 +37,7 @@ export default function AddCause() {
                 htmlFor="projectname"
                 className="block text-sm font-medium text-neutral-600"
               >
-                Project name
+                  Campaign name
               </label>
               <div className="mt-1">
                 <input
@@ -54,14 +54,14 @@ export default function AddCause() {
                 htmlFor="address"
                 className="block text-sm font-medium text-neutral-600"
               >
-                Beneficiary
+                  Beneficiary address
               </label>
               <div className="mt-1">
                 <input
                   id="address"
                   name="address"
                   type="text"
-                  placeholder="Address of beneficiary"
+                  placeholder="Ethereum address to receive donations"
                   className="block w-full px-5 py-3 text-base text-neutral-600 placeholder-gray-300 transition duration-500 ease-in-out transhtmlForm border border-transparent rounded-lg bg-gray-50 focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-300"
                 />
               </div>
@@ -140,10 +140,11 @@ export default function AddCause() {
                     </g>
                   </g>
                 </svg>
-                <span className="ml-4"> Create cause</span>
+                  <span className="ml-4"> Create campaign</span>
               </div>
             </button>
           </form>
+
         </div>
       </div>
     </div>
