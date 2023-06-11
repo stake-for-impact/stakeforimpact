@@ -11,7 +11,7 @@ export function ProjectList() {
         functionName: 'getAllVaults',
     })
     console.log(data)
-    const beneficiaries = (Object.values(data as object))
+    const beneficiaries = data && (Object.values(data as object))
 
     return (
         beneficiaries ? (
@@ -39,4 +39,3 @@ export function ProjectList() {
             </section>) : (<>loading</>)
     )
 }
-
