@@ -12,10 +12,10 @@ export function ProjectList() {
     })
     let beneficiaries = []
     console.log(data)
+
     if (!isLoading && data) {
         beneficiaries = (Object.values(data as object))
     }
-
 
     return (
         beneficiaries ? (
@@ -43,4 +43,3 @@ export function ProjectList() {
             </section>) : (<>loading</>)
     )
 }
-
