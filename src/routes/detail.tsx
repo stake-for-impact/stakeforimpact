@@ -21,7 +21,7 @@ export default function Detail() {
 
   //console.log(data)
 
-  return (<section className="w-full">
+  return (data && <section className="w-full">
     <div className="relative items-center w-full px-5 pt-24 mx-auto md:px-12 lg:px-16 max-w-7xl">
       <div className="flex w-full mx-auto text-left">
         <div className="relative flex-col items-center mx-auto">
